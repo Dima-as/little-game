@@ -1,0 +1,32 @@
+{
+  "name": "little-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /little-game/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dima-as/little-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dima-as/little-game/issues"
+  },
+  "homepage": "https://Dima-as.github.io/little-game",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
+  },
+  "dependencies": {
+    "express-handlebars": "^5.3.4",
+    "gh-pages": "^3.2.3",
+    "sass": "^1.42.1"
+  }
+}
