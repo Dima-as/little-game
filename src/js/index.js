@@ -1,7 +1,11 @@
 import '../css/styles.css';
 const dino = document.getElementById("dino");
 const cactus= document.getElementById("cactus");
-
+document.addEventListener('touchstart', touchstart)
+function touchstart(evt){
+    console.log(evt);
+    jump()
+}
 document.addEventListener('keydown', function(event){
     jump();
 })
@@ -17,7 +21,7 @@ function jump(){
 let isAlive = setInterval(function(){
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
-         if (cactusLeft < 40 && cactusLeft > 0 && dinoTop >= 150) {
+         if (cactusLeft < 40 && cactusLeft > 0 && dinoTop >=  150) {
         alert("GEME OVER!!")
         
     }
